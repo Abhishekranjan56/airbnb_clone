@@ -5,10 +5,10 @@ import EmptyState from "@/app/components/EmptyState";
 import ListingClient from "./ListingClient";
 import getReservations from "@/app/actions/getReservations";
 
-interface Iparams {
+interface IParams {
   listingId?: string;
 }
-const ListingPage = async ({ params }: { params: Iparams }) => {
+const ListingPage = async ({ params }: { params: IParams }) => {
   const listing = await getListingById(params);
   const reservations = await getReservations(params);
   const currentUser = await getCurrentUser();

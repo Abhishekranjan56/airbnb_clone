@@ -28,9 +28,11 @@ const Input: React.FC<InputProps> = ({
       {formatPrice && (
         <BiRupee
           size={24}
-          className="absolute
-  top-5
-  left-2"
+          className="
+          text-neutral-700
+          absolute
+          top-5
+          left-2"
         />
       )}
       <input
@@ -52,7 +54,7 @@ const Input: React.FC<InputProps> = ({
             disabled:opacity-70
             disabled:cursor-not-allowed
             ${formatPrice ? "pl-9" : "pl-4"}
-            ${errors[id] ? "border-rose-500" : " sborder-rose-300"}
+            ${errors[id] ? "border-rose-500" : " border-neutral-300"}
             ${errors[id] ? "focus:border-rose-500" : "focus:border-black"}`}
       />
       <label

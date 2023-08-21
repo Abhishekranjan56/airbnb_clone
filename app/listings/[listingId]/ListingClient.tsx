@@ -126,7 +126,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
               roomCount={listing.roomCount}
               guestCount={listing.guestCount}
               bathroomCount={listing.bathroomCount}
-              locationValur={listing.locationValue}
+              locationValue={listing.locationValue}
             />
             <div
               className="order-first
